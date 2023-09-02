@@ -1,0 +1,28 @@
+/* pagina artistas */
+.container {
+	@include dimensiones (100%, 100%);
+}
+
+.row {
+	@include dimensiones (100%, 100%);
+}
+
+.card {
+	border-radius: 20px;
+	padding: 2%;
+	margin: 8px;
+	box-shadow: 4px 4px 4px 0px rgb(246, 224, 242, 0.70);
+	font-size: 14px;
+	overflow: hidden;
+
+	img {
+		border-radius: 20px;
+
+		&:hover {
+
+			transform: translateY(22%) scale(1.7);
+			border-radius: 0;
+			transition: 1.8s;
+		}
+	}
+}

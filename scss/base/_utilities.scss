@@ -1,0 +1,29 @@
+@keyframes balancear {
+    from {
+        transform: rotate(1.5deg);
+    }
+
+    to {
+        transform: rotate(-1.5deg);
+    }
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes girar {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(180deg); }
+  }
+
+@mixin dimensiones ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
